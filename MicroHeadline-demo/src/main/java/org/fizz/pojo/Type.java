@@ -11,6 +11,8 @@ import lombok.Data;
 //@TableName(value ="news_type") // .yaml中全局配置了table-prefix: news_，会自动映射表名和类名，此处无需再写注解
 @Data
 public class Type implements Serializable {
+
+    @TableId
     private Integer tid;
 
     private String tname;
